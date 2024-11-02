@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}State Tier List{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            {% block header %}
+                <h1>State Tier List</h1>
+            {% endblock %}
+        </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 DJ Stomp</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  State Tier List
+{% endblock %}
+
+{% block content %}
+  <div id="tier-list">
+    <div class="tier" data-tier="S">S Tier</div>
+    <div class="tier" data-tier="A">A Tier</div>
+    <div class="tier" data-tier="B">B Tier</div>
+    <div class="tier" data-tier="C">C Tier</div>
+    <div class="tier" data-tier="D">D Tier</div>
+    <div class="tier" data-tier="F">F Tier</div>
+  </div>
+
+  <div class="minimap" id="minimap">{{ state_map|safe }}</div>
+
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}

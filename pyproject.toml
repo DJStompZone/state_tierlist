@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "state-tierlist"
+version = "0.2.1"
+description = "Flask SPA for creating a tier list of the U.S. states"
+authors = ["DJ Stomp <85457381+DJStompZone@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+flask = "^3.0.3"
+bs4 = "^0.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

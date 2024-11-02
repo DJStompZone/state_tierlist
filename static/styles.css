@@ -1,0 +1,55 @@
+path {
+    fill-rule: evenodd;
+    /* stroke-width: 0.97063118000000004; */
+    stroke-width: 2px;
+    fill: #abcca6b9;
+    cursor: pointer;
+    stroke: #000;
+}
+
+#tier-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .tier {
+    border: 1px solid #ccc;
+    min-height: 60px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+  }
+
+  svg {
+    stroke-linejoin: round; 
+    stroke: #000;
+    fill: none;
+  }
+
+  path.selected {
+    stroke: #0000ff;
+    fill: #aaaaff;
+  }
+  
+  .state-svg path {
+    cursor: grab;
+  }
+  
+  .state-svg path:active {
+    cursor: grabbing;
+  }
+
+@media (min-width: 768px) {
+  #tier-list {
+    flex-direction: row;
+  }
+  .tier {
+    flex: 1;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  #tier-list {
+    flex-direction: column;
+  }
+}
